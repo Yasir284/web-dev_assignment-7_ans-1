@@ -8,13 +8,35 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div>
-      <h1>Quiz Game</h1>
+    <div class="main">
+      <h1>Quiz App</h1>
 
-      <div></div>
+      <div class="quiz-card">
+        <p class="question">Q.2. How many 2+2?</p>
+        <select class="btn">
+          <option value="select">select</option>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+          <option>Four</option>
+        </select>
+        <button class="btn submit">Submit</button>
+        <button class="btn next">Next</button>
+      </div>
+
+      <div class="ans-status">Status: <span></span></div>
+
+      <template class="score-template">
+        <div class="score-card">
+          <p class="score-heading">Score</p>
+          <p class="right-questions">Total Right Questions: <span></span></p>
+          <p class="wrong-questions">Total Wrong Questions: <span></span></p>
+          <p class="final-result">Final Result: <span></span></p>
+        </div>
+      </template>
     </div>
-
     <script src="./script.js"></script>
   </body>
 </html>
